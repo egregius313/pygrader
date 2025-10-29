@@ -1,0 +1,13 @@
+[project]
+name = "pygrader"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "certifi==2025.10.5",
+    "chardet==5.2.0",
+    "idna==3.11",
+    "requests==2.32.5",
+    "urllib3==2.5.0",
+]

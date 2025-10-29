@@ -29,8 +29,6 @@ DISARM_ALL = False
 DISARM_MESSAGER = False
 DISARM_GRADER = False
 
-RUN_WITH_TESTS = False
-ONLY_RUN_TESTS = False
 NUM_REGEX = re.compile(r'-?\d+\.\d+|-?\d+')
 # r'[+-]?\d+\.\d+|\d+'
 # r'[-+]?\d+(\.\d+)?'
@@ -660,11 +658,3 @@ def main():
             print("Unable to leave current directory")
             exit(1)
     print('Finished grading all submissions for this assignment')
-
-
-if __name__ == '__main__':
-    if RUN_WITH_TESTS or ONLY_RUN_TESTS:
-        import py
-        py.test.cmdline.main()
-    if not ONLY_RUN_TESTS:
-        main()
